@@ -74,7 +74,7 @@ export class PrivacyPolicy {
       <div class="privacy-policy-container">
         <div class="form-container">
           <h2>Privacy Policy Generator</h2>
-          <p class="subtitle">Fill in your details to generate a privacy policy</p>
+          {/* <p class="subtitle">Fill in your details to generate a privacy policy</p> */}
 
           <form onSubmit={event => this.handleSubmit(event)}>
             <div class="form-group">
@@ -131,16 +131,6 @@ export class PrivacyPolicy {
             </div>
 
             <div class="form-group">
-              <label htmlFor="address">Address</label>
-              <input id="address" type="text" name="address" placeholder="Street address" value={this.formData.address} onInput={event => this.handleChange(event)} required />
-            </div>
-
-            <div class="form-group">
-              <label htmlFor="city">City</label>
-              <input id="city" type="text" name="city" placeholder="City" value={this.formData.city} onInput={event => this.handleChange(event)} required />
-            </div>
-
-            <div class="form-group">
               <label htmlFor="stateProvince">State/Province</label>
               <input
                 id="stateProvince"
@@ -151,6 +141,16 @@ export class PrivacyPolicy {
                 onInput={event => this.handleChange(event)}
                 required
               />
+            </div>
+
+            <div class="form-group">
+              <label htmlFor="city">City</label>
+              <input id="city" type="text" name="city" placeholder="City" value={this.formData.city} onInput={event => this.handleChange(event)} required />
+            </div>
+
+            <div class="form-group">
+              <label htmlFor="address">Address</label>
+              <input id="address" type="text" name="address" placeholder="Street address" value={this.formData.address} onInput={event => this.handleChange(event)} required />
             </div>
 
             <div class="form-group">
