@@ -54,9 +54,9 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow-y: auto;
   flex: 1;
   padding-right: 6px;
+  overflow: hidden; /* Remove scrollbar */
 }
 
 .form-group {
@@ -338,7 +338,7 @@ form::-webkit-scrollbar-thumb {
   .form-container {
     width: 100%;
     height: auto;
-    max-height: 50vh;
+    max-height: none;
     flex: none;
   }
 
